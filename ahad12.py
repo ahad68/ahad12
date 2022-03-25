@@ -45,52 +45,6 @@ def main_apv():
     except IOError:
         os.system('clear')
         print logo
-        print '           You dont have subscrption'
-        print '           Hello Dear Ye Cammonds Paid Han Or'
-        print '           Ap Ke Subscription Nhi Ha Please Ap'
-        print '           Admin Sa Rabta Kran Thanks'
-        print '           Subscription Kelya Enter Press Kro'
-        print '           Or Whatsapp Pa Rabta Kro Thanks'
-        print ''
-        myid = uuid.uuid4().hex[:10]
-        print '         YOUR KEY : ' + myid + imt
-        kok = open('/sdcard/imt.txt', 'w')
-        kok.write(myid + imt)
-        kok.close()
-        print ''
-        print '           Ya Uper Wale Ap Ke KEY Ha'
-        print '           Copy Kar Ka WhatsApp Pa Bhaj Dena'
-        print ''
-        print ''
-        print ''
-        print '             Agar Ap Na Subscription Kar Le Ha To'
-        raw_input('  Termux Sa Exit Kar Ka Phir Sa Cammonds Lagio Thanks')
-        os.system('xdg-open https://wa.me/+923036864372')
-    r1 = requests.get('https://raw.githubusercontent.com/ahad68/ahad12/main/Server.txt').text
-    if key1 in r1:
-        main_system()
-    else:
-        os.system('clear')
-        print logo
-        print '           You dont have subscrption'
-        print '           Hello Dear Ya Cammonds Paid Han Or'
-        print '           Ap Ke Subscription Nhi Ha Please Ap'
-        print '           Admin Sa Rabta Kran Thanks'
-        print '           Subscription Kelya Enter Press Kro'
-        print '           Or Whatsapp Pa Rabta Kro Thanks'
-        print ''
-        print '         YOUR KEY : ' + key1
-        print ''
-        print '           Ya Uper Wale Ap Ke KEY Ha'
-        print '           Copy Kar Ka WhatsApp Pa Bhaj Dena'
-        print ''
-        print ''
-        print ''
-        print '             Agar Ap Na Subscription Kar Le Ha To'
-        raw_input('  Termux Sa Exit Kar Ka Phir Sa Cammonds Lagio Thanks')
-        os.system('xdg-open https://wa.me/+923475353500')
-
-
 def main_system():
     try:
         token = open('token.txt', 'r').read()
